@@ -1,0 +1,122 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenify</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Zenify</div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#descargar">Descargá la app</a></li>
+      </ul>
+    </nav>
+    <button class="btn-login">Probar gratis</button>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+<!-- Sección Cómo Funciona -->
+<section id="como-funciona" class="how-it-works">
+    <h2>¿Cómo funciona Zenify?</h2>
+    <div class="steps">
+      <div class="step">
+        <img src="meditacion.svg" alt="Meditación" />
+        <h3>1. Elegí una meditación</h3>
+        <p>Explorá nuestra colección según tu estado de ánimo o necesidad.</p>
+      </div>
+      <div class="step">
+        <img src="auriculares.svg" alt="Auriculares" />
+        <h3>2. Conectá tus auriculares</h3>
+        <p>Recomendamos un espacio tranquilo y auriculares cómodos.</p>
+      </div>
+      <div class="step">
+        <img src="relax.svg" class="svg-conf" alt="Relajate" />
+        <h3>3. Relajate en minutos</h3>
+        <p>Escuchá, respirá y dejá que Zenify haga el resto.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Sección Opiniones -->
+<section id="opiniones" class="opiniones">
+    <h2>Lo que dicen nuestros usuarios</h2>
+    <div class="opinion-container">
+      <div class="opinion-card">
+        <p>"Zenify me ayudó a dormir mejor y reducir mi ansiedad. ¡Es parte de mi rutina diaria!"</p>
+        <div class="usuario">
+          <img src="chica.jpg" alt="Usuario feliz">
+          <span>Cami R., 28 años</span>
+        </div>
+      </div>
+      <div class="opinion-card">
+        <p>"Nunca pensé que una app pudiera hacerme sentir tan en paz. Las meditaciones guiadas son mágicas."</p>
+        <div class="usuario">
+          <img src="chico.jpg" alt="Usuario feliz">
+          <span>Juan P., 33 años</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección Descarga -->
+<section id="descargar" class="download-app">
+    <div class="download-content">
+      <div class="text">
+        <h2>Descargá Zenify</h2>
+        <p>Comenzá tu viaje hacia una mente más calma y un cuerpo más relajado. Disponible para iOS y Android.</p>
+        <div class="store-buttons">
+          <a href="#"><img src="appstore.svg" alt="App Store"></a>
+          <a href="#"><img src="googleplay.svg" alt="Google Play"></a>
+        </div>
+      </div>
+      <div class="app-image">
+        <img src="mockup.jpg" id="mockup-img" alt="Zenify App Mockup">
+      </div>
+    </div>
+  </section>
+
+  <footer class="zenify-footer">
+    <div class="footer-container">
+      <div class="logo">
+        <h3>Zenify</h3>
+        <p>Encuentra tu paz interior, todos los días.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#descargar">Descarga la app</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contacto">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@zenify.com">hola@zenify.com</a></li>
+          <li>Buenos Aires, Argentina</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Zenify. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
